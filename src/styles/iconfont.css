@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'icons';
+  src:
+    url('../fonts/icons.ttf?qci1qu') format('truetype'),
+    url('../fonts/icons.woff?qci1qu') format('woff'),
+    url('../fonts/icons.svg?qci1qu#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-L:before {
+  content: "\e900";
+}
+.icon-arrow-R:before {
+  content: "\e901";
+}
+.icon-burger:before {
+  content: "\e902";
+}
+.icon-buy:before {
+  content: "\e903";
+}
+.icon-delete:before {
+  content: "\e904";
+}
+.icon-din:before {
+  content: "\e905";
+}
+.icon-down:before {
+  content: "\e906";
+}
+.icon-faq:before {
+  content: "\e907";
+}
+.icon-like:before {
+  content: "\e908";
+}
+.icon-like-full:before {
+  content: "\e909";
+}
+.icon-logo:before {
+  content: "\e90a";
+}
+.icon-pdf:before {
+  content: "\e90b";
+}
+.icon-sale:before {
+  content: "\e90c";
+}
+.icon-search:before {
+  content: "\e90d";
+}
+.icon-sms:before {
+  content: "\e90e";
+}
+.icon-video:before {
+  content: "\e90f";
+}
+.icon-youtube:before {
+  content: "\e910";
+}
