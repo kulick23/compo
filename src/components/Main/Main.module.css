@@ -1,9 +1,29 @@
 .main {
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   align-items: center;
-   width: 90%;
-   margin: 50px auto;
+   display: grid;
+   grid-template-columns: 30% 30% 40%;
+   grid-template-rows: 10% 10% 55% 25%;
+   gap: 0px 0px;
+    height: 70vh;
+   grid-template-areas:
+    "source source source"
+    "productname productname productname"
+    "slider buyzone characteristic"
+    "slider desc desc";
 }
-
+.source {
+    grid-area: source;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+.productname {
+    grid-area: productname;
+    text-transform: uppercase;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+.slider { grid-area: slider; }
+.buyzone { grid-area: buyzone; }
+.characteristic { grid-area: characteristic; }
+.desc { grid-area: desc; }

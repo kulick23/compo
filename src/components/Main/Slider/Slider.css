@@ -1,0 +1,42 @@
+.main{
+    text-align: center;
+    margin-top:30px ;
+
+}
+.thumbnail{
+    justify-content: center;
+    display: flex;
+    padding-top: 20px;
+    gap: 15px;
+}
+.thumbnail img{
+    border-radius: 10px;
+    width: 60px;
+
+}
+.clicked{
+    border: 1px solid #1551e5;
+}
+.btns{
+    height: 60px;
+    width: 20px;
+    border-radius: 8px;
+    background: #E2E4F0;
+}
+.slider__slide{
+    width: 100%;
+    height: 100%;
+
+}
+.slider__slide img{
+    height: auto;
+    width: 60%;
+    border-radius: 15px;
+}
+.btns-prev, .btns-next{
+    margin-top: 0;
+    color: #1551e5;
+    font-size: 40px;
+    margin-left: -20px;
+
+}
