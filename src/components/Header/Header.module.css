@@ -6,32 +6,39 @@ header{
     justify-content: space-between;
     align-items: center;
     height: 70px;
-    margin-right: 20px; /* Отступ справа */
+    margin-right: 20px;
     margin-left: 20px;
 }
 .header__second{
     display: flex;
     height: 40px;
-    border-top: 2px solid #E2E4F0; /* Верхняя граница */
-    border-bottom: 2px solid #E2E4F0; /* Нижняя граница */
-    border-left: none; /* Убираем левую границу */
-    border-right: none; /* Убираем правую границу */
+    border-top: 2px solid #E2E4F0;
+    border-bottom: 2px solid #E2E4F0;
+    border-left: none;
+    border-right: none;
 }
 .links__block1,.links__block2{
     display: flex;
     gap: 15px;
     align-items: center;
 }
+.links__block1 {
+    margin-left: 20px;
+}
+
 .links__block2{
     margin-left: auto;
+    margin-right: 20px;
 }
 .header__search{
     border: 2px solid #E2E4F0;
     border-radius: 7px;
     height: 40px;
-    display: flex; /* Добавляем флексбокс */
+    display: flex;
     align-items: center;
+
 }
+
 
 .header__verticalline {
     border-left: 1px solid #E2E4F0;
