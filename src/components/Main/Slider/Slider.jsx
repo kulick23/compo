@@ -51,6 +51,7 @@ function Slider() {
     };
 
     return (
+        <div className="slider">
         <div className="main">
             <div className="slider__slide">
                 <img src={wordData.value} />
@@ -75,7 +76,7 @@ function Slider() {
                     <p className="btns-next icon-arrow-R"></p>
                 </button>
             </div>
-
+        </div>
         </div>
     );
 }

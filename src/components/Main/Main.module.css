@@ -23,60 +23,10 @@
     display: flex;
     align-items: center;
 }
-.slider { grid-area: slider; }
-.buyzone { grid-area: buyzone; }
-.characteristic { grid-area: characteristic; }
+
+
 .desc { grid-area: desc; }
 
-.buyzone__price, .buyzone__order, .buyzone__deliver, .buyzone__buy, .characteristic__zone{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
-.buyzone__discount, .buyzone__avail{
-    height: 15px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    padding: 5px;
-}
-.buyzone__discount{
-    background-color: #FF3D71;
-    color: white;
-}
-.buyzone__avail{
-    background-color: #E2E4F0;
-    color: #a1a0a0;
-}
-.buyzone__stripe{
-    width: 80%;
-    height: 1px;
-    background-color:  #E2E4F0;
-}
-.buyzone__deliver{
-    gap: 15%;
-}
-.buyzone__button1, .buyzone__button2{
-    height: 40px;
-    display: flex;
-    justify-content: center;
 
-}
-.buyzone__button1{
-    background-color: #1551E5;
-    width: 200px;
-    gap: 5px;
-}
-.buyzone__iconbuy, .buyzone__iconlike{
-    margin-top: -2px;
-    font-size: 20px;
-}
-.buyzone__iconlike{
-    color: #1551E5;
-}
-.characteristic__zone{
-    gap: 15%;
-}
+
 

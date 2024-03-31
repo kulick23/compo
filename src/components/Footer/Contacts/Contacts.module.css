@@ -1,0 +1,34 @@
+.contacts{
+    display: flex;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-top: 2px solid #E2E4F0;
+    border-bottom: 2px solid #E2E4F0;
+    border-left: none;
+    border-right: none;
+}
+.contacts__leftblock, .contacts__rightblock{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.contact__logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.contact__logoicon{
+    color: #1551E5;
+}
+.contacts__info {
+    line-height: 0.7;
+}
+.contacts__rightblock {
+    margin-left: auto;
+}
+.contacts__offer{
+    color: #1551E5;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}

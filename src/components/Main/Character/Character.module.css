@@ -1,0 +1,29 @@
+.characteristic {
+    grid-area: characteristic;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10% 20% 20% 20% 20%;
+    gap: 10px 0px;
+    grid-template-areas:
+    "title title"
+    "post artik"
+    "rak etm"
+    "brand seria"
+    "proizv .";
+}
+.proizv { grid-area: proizv; }
+.brand { grid-area: brand; }
+.rak { grid-area: rak; }
+.post { grid-area: post; }
+.seria { grid-area: seria; }
+.etm { grid-area: etm; }
+.artik { grid-area: artik; }
+.title { grid-area: title; }
+
+.post, .rak, .brand, .seria, .etm, .artik, .proizv{
+    line-height: 0.8;
+}
+.title{
+    margin-top: 0;
+}

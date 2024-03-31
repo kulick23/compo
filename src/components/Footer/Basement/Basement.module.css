@@ -1,0 +1,36 @@
+.basement{
+    color: #E2E4F0;
+}
+.basement__linksblock{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.basement__linkicons{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.basement__icons{
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+.basement__blueicons{
+    color: #1551E5;
+}
+.basement__text{
+    text-align: center;
+}
+.basement__logoblock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.basement__logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}

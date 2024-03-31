@@ -1,0 +1,16 @@
+.category {
+    margin-right: 20px;
+    margin-left: 20px;
+    border-bottom: 2px solid #E2E4F0;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 10%;
+    grid-template-areas:
+    "woman man child sport";
+}
+.woman { grid-area: woman; }
+.man { grid-area: man; }
+.child { grid-area: child; }
+.sport { grid-area: sport; }
