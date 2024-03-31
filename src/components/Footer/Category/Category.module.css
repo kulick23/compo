@@ -10,7 +10,17 @@
     grid-template-areas:
     "woman man child sport";
 }
-.woman { grid-area: woman; }
+.category a{
+    display: block;
+    margin: 10px 0;
+}
+.woman {
+    grid-area: woman;
+}
 .man { grid-area: man; }
 .child { grid-area: child; }
 .sport { grid-area: sport; }
+.category a:hover{
+    color: #8F9BB3;
+    text-decoration: underline;
+}

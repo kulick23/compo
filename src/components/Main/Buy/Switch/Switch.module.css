@@ -5,10 +5,11 @@
 
 .checkbox {
     opacity: 0;
+    width: 50px;
 }
 
 .switch {
-    width: 60px;
+    width: 50px;
     height: 30px;
     background-color: #e5e5e5;
     z-index: 0;
@@ -26,7 +27,7 @@
     position: absolute;
     left: 5px;
     top: 5px;
-    width: 57px; /* Исправлено значение ширины */
+    width: 47px; /* Исправлено значение ширины */
     background-color: #ffffff; /* Исправлен цвет фона */
     z-index: 1;
     border-radius: 95px;
@@ -51,5 +52,5 @@
 }
 
 .switchOn:after {
-    left: 35px;
+    left: 25px;
 }

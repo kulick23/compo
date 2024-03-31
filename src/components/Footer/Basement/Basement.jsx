@@ -1,29 +1,27 @@
 import React from 'react';
-import s from './Basement.module.css'
-import '../../../styles/iconfont.css'
+import s from './Basement.module.css';
+import '../../../styles/iconfont.css';
+
 const Basement = () => {
+    const items = [
+        { iconClass: 'icon-pdf', text: 'PDF презентация' },
+        { iconClass: 'icon-video', text: 'Видео инструкция' },
+        { iconClass: 'icon-faq', text: 'FAQ' },
+        { iconClass: 'icon-youtube', text: 'Мы на YouTube', textColor: '#1551E5' },
+        { text: 'Политика конфиденциальности' },
+        { text: 'Лицензионное соглашение' }
+    ];
+
     return (
         <div className={s.basement}>
-         <div className={s.basement__linksblock}>
-             <div className={s.basement__linkicons}>
-                 <p className={`${s.basement__icons} icon-pdf`}></p>
-                 <p>PDF презентация</p>
-             </div>
-             <div className={s.basement__linkicons}>
-                 <p className={`${s.basement__icons} icon-video`}></p>
-                 <p>Видео инструкция</p>
-             </div>
-             <div className={s.basement__linkicons}>
-                 <p className={`${s.basement__icons} icon-faq`}></p>
-                 <p>FAQ</p>
-             </div>
-             <div className={`${s.basement__linkicons} ${s.basement__blueicons}`}>
-                 <p className={`${s.basement__icons} icon-youtube`}></p>
-                 <p>Мы на YouTube</p>
-             </div>
-             <p>Политика конфиденциальности</p>
-             <p>Лицензионное соглашение</p>
-         </div>
+            <div className={s.basement__linksblock}>
+                {items.map((item, index) => (
+                    <div key={index} className={s.basement__linkicons}>
+                        {item.iconClass && <p className={`${s.basement__icons} ${item.iconClass}`} style={{ color: item.textColor }}></p>}
+                        <a href={'*'} style={{ color: item.textColor }}>{item.text}</a>
+                    </div>
+                ))}
+            </div>
             <p className={s.basement__text}>
                 Настоящая Политика обработки персональных данных разработана в соответствии
                 с Конституцией Российской Федерации, Трудовым кодексом Российской Федерации,
@@ -37,11 +35,9 @@ const Basement = () => {
                 </div>
                 <h3>Разработка платформы</h3>
             </div>
-
         </div>
-
-
-    )
-}
+    );
+};
 
 export default Basement;
+

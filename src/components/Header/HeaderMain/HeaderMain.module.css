@@ -1,0 +1,83 @@
+.header__first{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    margin-right: 20px;
+    margin-left: 20px;
+    gap: 2%;
+}
+.header__search{
+    border: 2px solid #E2E4F0;
+    border-radius: 7px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+
+}
+
+.header__search input[type="text"] {
+    width: 100%;
+}
+
+.header__verticalline {
+    border-left: 1px solid #E2E4F0;
+    height: 50px;
+}
+.header__logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.header__button{
+    background-color: #1551E5;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.header__profile{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.header__logoicon, .header__icondin, .header__icondown{
+    color: #1551E5;
+}
+.header__buttonicon{
+    margin-top: 43%;
+}
+.header__iconbuy{
+    margin-top: 25px;
+}
+.header__icondown{
+    margin-top: 5px;
+}
+.search__icons{
+    display: flex;
+    padding-right: 10px;
+    gap: 5px;
+    font-size: 20px;
+
+}
+.header__buttonicon, .header__iconlike, .header__icondin, .header__iconbuy, .header__icondown{
+    font-size: 20px;
+}
+
+::placeholder {
+    color: black;
+    padding-left: 10px;
+}
+.header__buy{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    color: #1551E5;
+    gap: 5px;
+    white-space: nowrap;
+}
+.header__avatar{
+    width: 32px;
+    height: 32px;
+}

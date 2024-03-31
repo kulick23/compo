@@ -1,5 +1,5 @@
 .basement{
-    color: #E2E4F0;
+    color: #8F9BB3;
 }
 .basement__linksblock{
     display: flex;
@@ -17,20 +17,23 @@
     margin-top: 12px;
     margin-bottom: 10px;
 }
-.basement__blueicons{
-    color: #1551E5;
-}
 .basement__text{
     text-align: center;
 }
 .basement__logoblock{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     gap: 20px;
 }
 .basement__logo{
     display: flex;
     align-items: center;
     gap: 5px;
+
+}
+
+.basement a:hover{
+    color: #8F9BB3;
+    text-decoration: underline;
 }

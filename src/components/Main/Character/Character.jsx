@@ -15,8 +15,8 @@ const Character = () => {
     const renderCharacteristics = () => {
         return characteristics.map((item, index) => (
             <div key={index}>
-                <h2 className={item.style}>{item.value}</h2>
-                <p>{item.title}</p>
+                <h3 className={item.style}>{item.value}</h3>
+                <p className={s.character__names}>{item.title}</p>
             </div>
         ));
     };

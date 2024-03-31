@@ -4,7 +4,7 @@
     grid-auto-columns: 1fr;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 10% 20% 20% 20% 20%;
-    gap: 10px 0px;
+    gap: 0px 0px;
     grid-template-areas:
     "title title"
     "post artik"
@@ -24,6 +24,10 @@
 .post, .rak, .brand, .seria, .etm, .artik, .proizv{
     line-height: 0.8;
 }
+.character__names{
+    color: #8F9BB3;
+}
+
 .title{
     margin-top: 0;
 }

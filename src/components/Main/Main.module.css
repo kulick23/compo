@@ -1,9 +1,8 @@
 .main {
    display: grid;
-   grid-template-columns: 30% 30% 40%;
-   grid-template-rows: 10% 10% 55% 25%;
-   gap: 0px 0px;
-    height: 70vh;
+   grid-template-columns: 30%-10px 30%-10px 40%-10px;
+   grid-template-rows: 10% 10% 50% 30%;
+   gap: 0px 20px;
    grid-template-areas:
     "source source source"
     "productname productname productname"
@@ -25,7 +24,10 @@
 }
 
 
-.desc { grid-area: desc; }
+.desc {
+    grid-area: desc;
+}
+
 
 
 

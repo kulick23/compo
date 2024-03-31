@@ -1,0 +1,39 @@
+
+.header__second{
+    display: flex;
+    height: 40px;
+    border-top: 2px solid #E2E4F0;
+    border-bottom: 2px solid #E2E4F0;
+    border-left: none;
+    border-right: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.links__block1,.links__block2{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.links__block1 {
+    margin-left: 20px;
+}
+
+.links__block2{
+    margin-left: auto;
+    margin-right: 20px;
+}
+.HeaderFallin__button{
+    height: 35px;
+    gap: 5px;
+    color: #1551E5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.HeaderFallin__iconsms{
+    margin-top: 16%;
+}
+.header__second a:hover{
+    color: #8F9BB3;
+    text-decoration: underline;
+}

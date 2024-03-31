@@ -1,46 +1,43 @@
 import React from 'react';
-import s from './Category.module.css'
+import s from './Category.module.css';
+
 const Category = () => {
+    const categories = [
+        {
+            title: 'Женщинам',
+            items: ['Одежда', 'Обувь', 'Аксессуары', 'Белье', 'Bra fitting'],
+            style: s.woman
+        },
+        {
+            title: 'Мужчинам',
+            items: ['Одежда', 'Обувь', 'Аксессуары', 'Белье'],
+            style: s.man
+        },
+        {
+            title: 'Детям',
+            items: ['Одежда', 'Обувь', 'Аксессуары', 'Белье', 'Игрушки', 'Малыши'],
+            style: s.child
+        },
+        {
+            title: 'Виды спорта',
+            items: ['Велоспорт', 'Туризм', 'Тренажеры и фитнес', 'Командные виды спорта', 'Самокаты'],
+            style: s.sport
+        }
+    ];
+
     return (
         <div className={s.category}>
-            <div className={s.woman}>
-                <h3>Женщинам</h3>
-                <p>Одежда</p>
-                <p>Обувь</p>
-                <p>Аксессуары</p>
-                <p>Белье</p>
-                <p>Bra fitting</p>
+            {categories.map((category, index) => (
+                <div key={index} className={category.style}>
+                    <h3>{category.title}</h3>
+                    {category.items.map((item, i) => (
+                        <a href={'*'} key={i}>{item}</a>
 
-            </div>
-            <div className={s.man}>
-                <h3>Мужчинам</h3>
-                <p>Одежда</p>
-                <p>Обувь</p>
-                <p>Аксессуары</p>
-                <p>Белье</p>
-            </div>
-            <div className={s.child}>
-                <h3>Детям</h3>
-                <p>Одежда</p>
-                <p>Обувь</p>
-                <p>Аксессуары</p>
-                <p>Белье</p>
-                <p>Игрушки</p>
-                <p>Малыши</p>
-            </div>
-            <div className={s.sport}>
-                <h3>Виды спорта</h3>
-                <p>Велоспорт</p>
-                <p>Туризм</p>
-                <p>Тренажеры и фитнес</p>
-                <p>Командные виды спорта</p>
-                <p>Самокаты</p>
-            </div>
-
+                    ))}
+                </div>
+            ))}
         </div>
-
-
-    )
-}
+    );
+};
 
 export default Category;

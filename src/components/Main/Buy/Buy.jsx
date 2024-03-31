@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import s from './Buy.module.css';
 import Switch from './Switch/Switch';
 
 const Buy = () => {
+    const [isIconLiked, setIconLiked] = useState(false);
+
+    const handleLikeButtonClick = () => {
+        setIconLiked(!isIconLiked);
+    };
+
     const deliverItems = [
         { count: 'Завтра', description: 'Доставка' },
         { count: '7 шт.', description: 'Тарасовка' },
@@ -11,16 +17,16 @@ const Buy = () => {
 
     const renderDeliverItems = () => {
         return deliverItems.map((item, index) => (
-            <div key={index}>
+            <div className={s.buyzone__deli} key={index} style={{ marginLeft: index !== 0 ? '14%' : '0' }}>
                 <h3>{item.count}</h3>
-                <p>{item.description}</p>
+                <p className={s.buyzone__stock}>{item.description}</p>
             </div>
         ));
     };
 
     return (
         <div className={s.buyzone}>
-            <p>166 534.00 цена без скидки</p>
+            <b className={s.buyzone__saleprise}>166 534.00 цена без скидки</b>
             <div className={s.buyzone__price}>
                 <h1>122 566 ₽</h1>
                 <div className={s.buyzone__discount}>
@@ -32,7 +38,7 @@ const Buy = () => {
                     <h4>12 штук в уп.</h4>
                 </div>
                 <Switch />
-                <p>Заказ упаковкой</p>
+                <b>Заказ упаковкой</b>
             </div>
             <div className={s.buyzone__stripe}></div>
             <div className={s.buyzone__deliver}>
@@ -41,10 +47,10 @@ const Buy = () => {
             <div className={s.buyzone__buy}>
                 <button className={s.buyzone__button1}>
                     <p className={`${s.buyzone__iconbuy} icon-buy`}></p>
-                    В корзину
+                    <b>В корзину</b>
                 </button>
-                <button className={s.buyzone__button2}>
-                    <p className={`${s.buyzone__iconlike} icon-like`}></p>
+                <button className={s.buyzone__button2} onClick={handleLikeButtonClick}>
+                    <p className={`${isIconLiked ? `${s.buyzone__iconlike} icon-like-full` : `${s.buyzone__iconlike} icon-like`}`}></p>
                 </button>
             </div>
         </div>
@@ -52,3 +58,4 @@ const Buy = () => {
 };
 
 export default Buy;
+

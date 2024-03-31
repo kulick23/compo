@@ -32,3 +32,10 @@
     display: flex;
     align-items: center;
 }
+.contact__support{
+    color: #8F9BB3;
+}
+.contacts a:hover{
+    color: #8F9BB3;
+    text-decoration: underline;
+}
