@@ -21,6 +21,7 @@
 .links__block2{
     margin-left: auto;
     margin-right: 20px;
+    color: #1551E5;
 }
 .HeaderFallin__button{
     height: 35px;
@@ -32,6 +33,9 @@
 }
 .HeaderFallin__iconsms{
     margin-top: 16%;
+}
+.HeaderFallin__iconsale{
+    margin-top: 20%;
 }
 .header__second a:hover{
     color: #8F9BB3;

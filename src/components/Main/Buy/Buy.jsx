@@ -2,9 +2,12 @@ import React, { useState } from 'react';
 import s from './Buy.module.css';
 import Switch from './Switch/Switch';
 
-const Buy = () => {
+const Buy = (props) => {
+    let price = 122566;
     const [isIconLiked, setIconLiked] = useState(false);
-
+    const formatPrice = (price) => {
+        return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+    };
     const handleLikeButtonClick = () => {
         setIconLiked(!isIconLiked);
     };
@@ -17,7 +20,7 @@ const Buy = () => {
 
     const renderDeliverItems = () => {
         return deliverItems.map((item, index) => (
-            <div className={s.buyzone__deli} key={index} style={{ marginLeft: index !== 0 ? '14%' : '0' }}>
+            <div className={s.buyzone__deli} key={index} style={{ marginLeft: index !== 0 ? '5%' : '0' }}>
                 <h3>{item.count}</h3>
                 <p className={s.buyzone__stock}>{item.description}</p>
             </div>
@@ -28,7 +31,7 @@ const Buy = () => {
         <div className={s.buyzone}>
             <b className={s.buyzone__saleprise}>166 534.00 цена без скидки</b>
             <div className={s.buyzone__price}>
-                <h1>122 566 ₽</h1>
+                <h1>{formatPrice(price)} ₽</h1>
                 <div className={s.buyzone__discount}>
                     <h4>-15%</h4>
                 </div>
@@ -45,7 +48,7 @@ const Buy = () => {
                 {renderDeliverItems()}
             </div>
             <div className={s.buyzone__buy}>
-                <button className={s.buyzone__button1}>
+                <button className={s.buyzone__button1} onClick={() => props.updateTotalPrice(price)}>
                     <p className={`${s.buyzone__iconbuy} icon-buy`}></p>
                     <b>В корзину</b>
                 </button>
@@ -58,4 +61,5 @@ const Buy = () => {
 };
 
 export default Buy;
+
 

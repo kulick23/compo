@@ -1,4 +1,5 @@
-.buyzone { grid-area: buyzone;
+.buyzone {
+    grid-area: buyzone;
     position: relative;
 }
 
@@ -20,7 +21,6 @@
     background-color:  #E2E4F0;
 }
 .buyzone__deliver{
-    gap: 90px;
 }
 .buyzone__deli{
     line-height: 1.0;
@@ -46,6 +46,9 @@
     margin-top: 20px;
     font-size: 20px;
     color: #1551E5;
+}
+.buyzone__price {
+    font-family: "GothamBold", Arial, sans-serif;
 }
 .buyzone__price, .buyzone__order, .buyzone__deliver, .buyzone__buy{
     display: flex;

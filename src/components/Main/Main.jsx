@@ -3,17 +3,17 @@ import s from './Main.module.css'
 import Slider from "./Slider/Slider";
 import Buy from "./Buy/Buy"
 import Character from "./Character/Character";
-const Main = () => {
+const Main = (props) => {
     return (
         <div className={s.main}>
                 <div className={s.source}>
-                    <p>Каталог / Обувь / Кроссовки / Беговые</p>
+                    <p className={s.main__source}>Каталог / Обувь / Кроссовки / Беговые</p>
                 </div>
                 <div className={s.productname}>
                     <h1>Кроссовки мужские Skechers Sunny Dale</h1>
                 </div>
                 <Slider/>
-                <Buy/>
+                <Buy updateTotalPrice = {props.updateTotalPrice}/>
                 <Character/>
 
                 <div className={s.desc}>

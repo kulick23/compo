@@ -16,6 +16,7 @@
     display: flex;
     align-items: center;
     gap: 5px;
+    font-family: "GothamBold", Arial, sans-serif;
 }
 .contact__logoicon{
     color: #1551E5;

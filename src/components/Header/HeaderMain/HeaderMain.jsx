@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import s from './HeaderMain.module.css'
 import avatar from "../../../assets/avatar.png";
 import '../../../styles/iconfont.css';
+
 
 const Logo = () => (
     <div className={s.header__logo}>
@@ -10,11 +11,16 @@ const Logo = () => (
     </div>
 );
 
-const Search = () => (
+const Search = ({ inputValue, setInputValue }) => (
     <label className={s.header__search}>
-        <input type="text" placeholder="Название запроса" />
+        <input
+            type="text"
+            placeholder="Название запроса"
+            value={inputValue}
+            onChange={(e) => setInputValue(e.target.value)}
+        />
         <div className={s.search__icons}>
-            <a href={'*'} className="icon-delete"></a>
+            <a href={'*'} className="icon-delete" onClick={() => setInputValue('')}></a>
             <a href={'*'} className="icon-search"></a>
         </div>
     </label>
@@ -27,7 +33,11 @@ const Profile = () => (
         <a href={'*'} className={`${s.header__icondown} icon-down`}></a>
     </div>
 );
-const HeaderMain = () => {
+
+const HeaderMain = (props) => {
+    const [inputValue, setInputValue] = useState('');
+
+    let price = props.getTotalPrice()
     return (
         <div className={s.header__first}>
             <Logo />
@@ -35,18 +45,16 @@ const HeaderMain = () => {
                 <p className={`${s.header__buttonicon} icon-burger`}></p>
                 Меню
             </button>
-            <Search />
+            <Search inputValue={inputValue} setInputValue={setInputValue} />
             <a href={'*'} className={`${s.header__icondin} icon-din`}></a>
             <div className={s.header__verticalline}></div>
             <a href={'*'} className={`${s.header__iconlike} icon-like`}></a>
             <button className={s.header__buy}>
                 <p className={`${s.header__iconbuy} icon-buy`}></p>
-                144 235₽
+                {price.toLocaleString()} ₽
             </button>
             <Profile />
         </div>
-
-
     )
 }
 

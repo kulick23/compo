@@ -5,14 +5,17 @@ import Main from './components/Main/Main';
 import Footer from "./components/Footer/Footer";
 
 
-const App = () => {
+
+
+
+const App = (props) => {
 
   return (
 
     <div className='app-wrapper'>
-      <Header />
+      <Header getTotalPrice = {props.getTotalPrice} />
       <div className='app-wrapper-content'>
-          <Main />
+          <Main updateTotalPrice = {props.updateTotalPrice} />
       </div>
         <Footer />
     </div>

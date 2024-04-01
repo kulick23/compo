@@ -3,10 +3,10 @@ import s from './Header.module.css';
 import HeaderMain from "./HeaderMain/HeaderMain";
 import HeaderFalling from "./HeaderFalling/HeaderFalling";
 
-const Header = () => {
+const Header = (props) => {
     return (
         <div className={s.header}>
-          <HeaderMain />
+          <HeaderMain getTotalPrice = {props.getTotalPrice}/>
             <HeaderFalling />
         </div>
     );

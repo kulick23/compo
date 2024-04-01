@@ -27,7 +27,9 @@
 .desc {
     grid-area: desc;
 }
-
+.main__source{
+    color: #8F9BB3;
+}
 
 
 
