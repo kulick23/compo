@@ -1,42 +1,61 @@
 .buyzone {
     grid-area: buyzone;
     position: relative;
+    padding: 2vw;
 }
 
-.buyzone__discount{
+.buyzone__discount {
     background-color: #FF3D71;
     color: white;
+    font-size: 1.2vw;
+    padding: 0.5vw 1vw;
 }
-.buyzone__avail{
+
+.buyzone__avail {
     background-color: #E2E4F0;
     color: #8F9BB3;
+    font-size: 0.7vw;
+    padding: 1vw;
 }
-.buyzone__stock{
+
+.buyzone__stock {
     color: #8F9BB3;
+    font-size: 1vw;
 }
-.buyzone__stripe{
-    margin-top: 30px;
+
+.buyzone__stripe {
+    margin-top: 3vh;
     width: 80%;
-    height: 1px;
-    background-color:  #E2E4F0;
+    height: 0.1vh;
+    background-color: #E2E4F0;
 }
-.buyzone__deliver{
-}
-.buyzone__deli{
+
+.buyzone__deli {
     line-height: 1.0;
+    font-size: 1vw;
 }
-.buyzone__button1, .buyzone__button2{
-    height: 55px;
+
+.buyzone__button1, .buyzone__button2 {
+    height: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    font-size: 1.2vw;
+    padding: 2vw;
 }
-.buyzone__button1{
+
+.buyzone__button1 {
     background-color: #1551E5;
     width: 55%;
-    gap: 5px;
+    gap: 0.5vw;
+    
 }
+
+.buyzone__iconbuy {
+    margin-top: 2.5vh;
+    font-size: 1.5vw;
+}
+
 .buyzone__iconbuy{
     margin-top: 25px;
     font-size: 20px;
@@ -47,32 +66,33 @@
     font-size: 20px;
     color: #1551E5;
 }
-.buyzone__price {
-    font-family: "GothamBold", Arial, sans-serif;
-}
-.buyzone__price, .buyzone__order, .buyzone__deliver, .buyzone__buy{
+
+.buyzone__price, .buyzone__order, .buyzone__deliver, .buyzone__buy {
     display: flex;
-    gap: 10px;
+    gap: 1vw;
     align-items: center;
 }
-.buyzone__discount, .buyzone__avail{
-    height: 15px;
+
+.buyzone__discount, .buyzone__avail {
+    height: 1.5vh;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
-    padding: 5px;
+    border-radius: 0.5vw;
 }
+
 .buyzone::after {
     content: "";
     position: absolute;
     top: 0;
     right: 5%;
-    width: 1px;
+    width: 0.1vw;
     height: 100%;
     background-color: #E2E4F0;
 }
-.buyzone__saleprise{
+
+.buyzone__saleprise {
     color: #FF3D71;
+    font-size: 1.2vw;
 }

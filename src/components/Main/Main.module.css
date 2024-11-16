@@ -25,6 +25,7 @@
 
 
 .desc {
+    margin-bottom: 4%;
     grid-area: desc;
 }
 .main__source{

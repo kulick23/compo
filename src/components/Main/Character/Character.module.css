@@ -1,17 +1,19 @@
 .characteristic {
     grid-area: characteristic;
     display: grid;
-    grid-auto-columns: 1fr;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 10% 20% 20% 20% 20%;
+    grid-template-rows: auto;
     gap: 0px 0px;
     grid-template-areas:
-    "title title"
-    "post artik"
-    "rak etm"
-    "brand seria"
-    "proizv .";
+        "title title"
+        "post artik"
+        "rak etm"
+        "brand seria"
+        "proizv .";
+    padding: 0.5vw;
+    box-sizing: border-box;
 }
+
 .proizv { grid-area: proizv; }
 .brand { grid-area: brand; }
 .rak { grid-area: rak; }
@@ -21,13 +23,45 @@
 .artik { grid-area: artik; }
 .title { grid-area: title; }
 
-.post, .rak, .brand, .seria, .etm, .artik, .proizv{
-    line-height: 0.8;
-}
-.character__names{
-    color: #8F9BB3;
+.post, .rak, .brand, .seria, .etm, .artik, .proizv {
+    line-height: 1.2;
+    padding: 1vw;
+    box-sizing: border-box;
 }
 
-.title{
+.character__names {
+    color: #8F9BB3;
+    font-size: 1vw;
+}
+
+.title {
     margin-top: 0;
+    font-size: 1.5vw;
+}
+
+@media (max-width: 768px) {
+    .characteristic {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "title"
+            "post"
+            "artik"
+            "rak"
+            "etm"
+            "brand"
+            "seria"
+            "proizv";
+    }
+
+    .character__names {
+        font-size: 2vw;
+    }
+
+    .title {
+        font-size: 3vw;
+    }
+
+    .post, .rak, .brand, .seria, .etm, .artik, .proizv {
+        font-size: 2vw;
+    }
 }
