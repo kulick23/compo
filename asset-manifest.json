@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/compo/static/css/main.ac51c4fa.css",
+    "main.js": "/compo/static/js/main.ed5d3a5c.js",
+    "static/media/GothamBook.otf": "/compo/static/media/GothamBook.7f34eb053257cab413dc.otf",
+    "static/media/GothamBold.otf": "/compo/static/media/GothamBold.eaee1032db0d2ff750d2.otf",
+    "static/media/skechers (2).jpg": "/compo/static/media/skechers (2).0cc8b10a68c891af7906.jpg",
+    "static/media/skechers (4).jpg": "/compo/static/media/skechers (4).dc2c2c17cb2699e2958c.jpg",
+    "static/media/skechers (5).jpg": "/compo/static/media/skechers (5).7fb2adabe52b6667fa2a.jpg",
+    "static/media/skechers (1).jpg": "/compo/static/media/skechers (1).69db378e1435765350b5.jpg",
+    "static/media/skechers (3).jpg": "/compo/static/media/skechers (3).a70dacbf9f4deb5b56fa.jpg",
+    "static/media/icons.svg?qci1qu": "/compo/static/media/icons.9a4f53b927e6bf0d8c01.svg",
+    "static/media/icons.woff?qci1qu": "/compo/static/media/icons.fa8f53e537c5e3ee0ea4.woff",
+    "static/media/icons.ttf?qci1qu": "/compo/static/media/icons.19c01c5d20836215e913.ttf",
+    "index.html": "/compo/index.html",
+    "main.ac51c4fa.css.map": "/compo/static/css/main.ac51c4fa.css.map",
+    "main.ed5d3a5c.js.map": "/compo/static/js/main.ed5d3a5c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ac51c4fa.css",
+    "static/js/main.ed5d3a5c.js"
+  ]
+}
